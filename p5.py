@@ -1,4 +1,4 @@
-# Practical 5: Implement FOSS-Cloud Functionality VSI (Virtual server Infrastructure) Infrastructure as a Service (IaaS), Storage.
+
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 virtual_servers = []
