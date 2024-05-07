@@ -17,13 +17,11 @@ public class JavaClient {
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("POST");
         con.setRequestProperty("Content-Type", "application/json");
-        // send POST request
         con.setDoOutput(true);
         OutputStream os = con.getOutputStream();
         os.write(jsonInpuString.getBytes());
         os.flush();
         os.close();
-        // get Response
         int responseCode = con.getResponseCode();
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         String inputLine;
@@ -31,7 +29,6 @@ public class JavaClient {
         while ((inputLine = in.readLine()) != null) {
             response.append(inputLine);
         }
-        // print result
         System.out.println("Response Code : " + responseCode);
         System.out.println("Response : " + response.toString());
     }
