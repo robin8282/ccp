@@ -1,4 +1,4 @@
-# Practical 6: Implement FOSS Cloud Functionality- VSI Platform as a Service (PaaS).
+
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 platform_applications = []
