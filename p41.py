@@ -24,7 +24,3 @@ def download_file(filename):
     
 if __name__=="__main__":
     app.run(debug=True)
-
-
-# after running this go on browser and write 
-# http://127.0.0.1:5000/download/down.jgp
