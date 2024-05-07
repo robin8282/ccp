@@ -13,7 +13,6 @@ def download_file(filename,download_folder=''):
 
 if __name__=='__main__':
     file_to_download="down.jpg"
-    # download_folder='uploads'
     download_folder='resources'
     
 download_file(file_to_download,download_folder)   
